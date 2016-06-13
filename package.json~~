@@ -1,0 +1,24 @@
+{
+  "name": "dakka",
+  "version": "1.0.0",
+  "description": "let's mess around with node and gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-bell-gw/dakka.git"
+  },
+  "author": "John Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-bell-gw/dakka/issues"
+  },
+  "homepage": "https://github.com/john-bell-gw/dakka",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
