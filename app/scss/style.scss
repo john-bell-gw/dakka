@@ -1,8 +1,84 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,900);
 
-$pink: #ff00ff;
+ul, ol{
+	list-style-type: none;
+}
 
-p{
-	color: $pink;
-	font-size: 21px;
+body{
+	background-image: url('../img/bg.jpg');
+	background-repeat: repeat;
+	font-family: Lato;
+}
+
+h1{
+	background-image: url('../img/roundel.png');
+	// background-image: url('../img/cutout.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+	height: 460px;
+	width: 460px;
+	opacity: 0.69;
+	background-position: 50%;
+	margin-top: 3em;
+}
+
+.nav{
+width: 80%;
+max-width: 800px;
+margin-top: 4em;
+display:flex;
+	ul{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+		li{
+
+			a{
+				user-select: none;
+				outline: none;
+				color: transparent;
+				text-decoration: none;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: 50%;
+				opacity: 0.69;
+				transition: all 0.25s;
+				height: 40px;
+				width: 120px;
+				display: block;
+				&.reception{
+					background-image: url('../img/reception.png');
+				}
+				&.rsvp{
+					background-image: url('../img/rsvp.png');
+					background-size: 62%;
+				}
+				&.gifts{
+					background-image: url('../img/gifts.png');
+					background-size: 62%;
+				}
+				&.accommodation{
+					background-image: url('../img/accommodation.png');
+					width: 200px;
+				}
+				&:hover{
+					opacity: 0.9;
+					transition: all 0.25s;
+				}
+			}
+		}
+	}
+}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
